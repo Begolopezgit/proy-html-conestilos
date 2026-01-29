@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto HTML con estilos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <figure>
+          <a href="index.html">
+            <img
+              src="./src/sass/assets/images/conquerblocks-logo.svg"
+              alt="logo_conquer"
+            />
+          </a>
+        </figure>
+        <span class="header__container-hambur">☰</span>
+        <nav class="header__container-nav">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Quienes somos</a>
+          <div class="header__container-nav-masters">
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Formaciones</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="m-fullstack.html">Master Desarrollo Full Stack</a>
+                  </li>
+                  <li>
+                    <a href="m-blockchain.html">Master Desarrollo Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="m-intelartifi.html"
+                      >Master Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="m-ciberseguridad.html">Master Ciberseguridad</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="blog.html">Blog</a>
+          <a href="registto.html">Registro</a>
+          <a href="login.html">Login</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="masterbl__container">
+        <div class="masterbl__container-hero">
+          <div class="masterbl__container-hero-text">
+            <h1>Máster en Desarrollo Blockchain de Conquer Blocks</h1>
+            <p class="titulo">
+              El Máster en Desarrollo Blockchain que arrasa en el mercado...
+            </p>
+            <p class="descrip">
+              La formación donde aprenderás todo lo que necesitas para
+              convertirte en programador especializado en tecnología Blockchain,
+              <span class="destaca"
+                >ay multiplicar tu valor y salario en el mercado laboral</span
+              >. de la programación.
+            </p>
+            <a href="registro.html">
+              <input class="buton" type="submit" value="Regístrate" />
+            </a>
+          </div>
+          <div class="masterbl__container-hero-img">
+            <img
+              src="./src/sass/assets/images/masters/blockchain/1_Desarrollo Blockchain.avif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="masterbl__container-formadores">
+          <div class="masterbl__container-formadores-text">
+            <h2>Profesorado del Máster Blockchain</h2>
+            <p class="descrip">
+              Fórmate con profesionales de la élite del desarrollo con amplia
+              experiencia en el mercado laboral
+            </p>
+          </div>
+          <div class="masterbl__container-formadores-art">
+            <article>
+              <figure>
+                <h3>Bienvenido Saez</h3>
+                <img
+                  src="./src/sass/assets/images/quienes_somos/bienvenido.avif"
+                  alt="Bienvenido Saez"
+                  width="150"
+                />
+              </figure>
+              <p class="titul-p">Director académico</p>
+              <p class="masterbl__container-art-text">
+                Bienvenido cuenta con más de 15 años de experiencia en el mundo
+                de la educación, especialmente enseñando HTML, CSS, Javascript y
+                Django.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <h3>Elena Hernández</h3>
+
+                <img
+                  src="./src/sass/assets/images/quienes_somos/elena.avif"
+                  alt="Elena Hernández"
+                  width="150"
+                />
+              </figure>
+              <p class="titul-p">Dra.Astrofísica Computacional</p>
+              <p class="masterbl__container-art-text">
+                Profesora de Python en el Máster, se ha dedicado a enseñar
+                programación en la Universidad a personas que, como tú, partían
+                de 0, y será la que te enseñe tu primer lenguaje de
+                programación.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <h3>Carlos Azaustre</h3>
+
+                <img
+                  src="./src/sass/assets/images/quienes_somos/carlos_azaustre.avif"
+                  alt="Carlos Azaustre"
+                  width="150"
+                />
+              </figure>
+              <p class="titul-p">Ingeniero telemático</p>
+              <p class="masterbl__container-art-text">
+                Está reconocido por Google desde 2019 como Developer Expert GDE
+                en Tecnologías web y premiado en 2022 y 2023 como Microsoft MVP
+                (Most Valuable Professional).
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="masterbl__container-sistema">
+          <div class="masterbl__container-sistema-text">
+            <h2>Sistema de enseñanza en 3 pasos</h2>
+            <p class="descrip">
+              Con el que te garantizamos convertirte en Desarrollador
+              especializado en Blockchain.
+            </p>
+          </div>
+          <div class="masterbl__container-sistema-art">
+            <article>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/blockchain/1-sistema_Paso1-blockchain.avif"
+                  alt="B"
+                />
+                <h3>
+                  EVM y Solidity para empezar en el mundo del Desarrollo
+                  Blockchain
+                </h3>
+              </figure>
+              <p class="masterbl__container-sistema-art-descrip">
+                La Ethereum Virtual Machine y su lenguaje de programación,
+                Solidity, representan el 62,5% de la actividad en el sector
+                Blockchain.
+              </p>
+              <p class="masterbl__container-sistema-art-descrip">
+                Con esta primera etapa, ya puedes estar listo para
+                <span class="destaca">encontrar tu primer empleo</span> como
+                Desarrollador de Smart Contracts.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/blockchain/2-sistema_Paso1-blockchain.avif"
+                  alt="B"
+                />
+                <h3>
+                  Rust, Golang y Blockchain Core para convertirte en
+                  Desarrollador Blockchain de élite
+                </h3>
+              </figure>
+              <p class="masterbl__container-sistema-art-descrip">
+                Aprenderás el creciente lenguaje Rust para Blockchains como
+                Solana o Polkadot, así como Golang para Desarrollo de
+                infraestructura Blockchain.
+              </p>
+              <p class="masterbl__container-sistema-art-descrip">
+                Nuestro programa te lleva a formar parte de
+                <span class="destaca">
+                  a élite de los Desarrolladores Blockchain.</span
+                >
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/blockchain/3-sistema_Paso1-blockchain.avif"
+                  alt="B"
+                />
+                <h3>
+                  Aprende a venderte para desbloquear las mejores oportunidades
+                  laborales del mercado
+                </h3>
+              </figure>
+              <p class="masterbl__container-sistema-art-descrip">
+                Te enseñamos cuál es la forma correcta de preparar tu carta de
+                presentación, tu contacto con las empresas, y cómo pasar de la
+                forma adecuada los procesos de selección, para que puedas
+                lanzarte al mercado laboral y
+                <span class="destaca"> conseguir tu puesto de empleo</span> .
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="masterbl__container-temario">
+          <div class="masterbl__container-temario-text">
+            <h3>Descubre los contenidos del Máster en Desarrollo Blockchain</h3>
+            <p class="descrip">
+              El más completo del mercado. Adaptado a la vida laboral.
+            </p>
+          </div>
+          <div class="masterbl__container-temario-bloques">
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 1:</span>
+                  <p>Teoría de Criptografía y Blockchain</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Criptografía</li>
+                  <li>Fundamentos de Blockchain</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 2:</span>
+                  <p>Teoría de EVM</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>VEVM nivel básico</li>
+                  <li>EVM nivel avanzado</li>
+                  <li>Desarrollo de nodos/li></li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 3:</span>
+                  <p>Solidity</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Sintaxis básica</li>
+                  <li>Sintaxis avanzada</li>
+                  <li>Tokens ERC-20</li>
+                  <li>Tokens ERC-721</li>
+                  <li>Tokens ERC-1155</li>
+                  <li>Ganache</li>
+                  <li>Truffle</li>
+                  <li>Hardhat</li>
+                  <li>Testing</li>
+                  <li>DEXes</li>
+                  <li>Uniswap V2</li>
+                  <li>Uniswap V3</li>
+                  <li>Uniswap V4</li>
+                  <li>DAOs</li>
+                  <li>Optimización de gas</li>
+                  <li>Hacking</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 4:</span>
+                  <p>Front-end y Back-end para Smart Contracts</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Web3.js</li>
+                  <li>Ethers.js</li>
+                  <li>dApps</li>
+                  <li>front-end</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 5:</span>
+                  <p>Rust y Solana</p>
+                </div>
+              </summary>
+
+              <div class="contenido">
+                <ul>
+                  <li>Sintaxis básica</li>
+                  <li>Sintaxis avanzada</li>
+                  <li>Smart contracts en Rust</li>
+                  <li>Solana Virtual Machine</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 6:</span>
+                  <p>Back-end</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Programación con IA</li>
+                  <li>Curriculum Vitae</li>
+                  <li>Portafolio de proyectos</li>
+                  <li>LinkedIn</li>
+                  <li>Entrevistas de trabajo</li>
+                  <li>Tech Business</li>
+                  <li>Freelancing</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 7:</span>
+                  <p>Bonus micro-especializaciones</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Ciberseguridad</li>
+                  <li>Desarrollo de Inteligencia Artificial</li>
+                </ul>
+              </div>
+            </details>
+
+            <a class="bot-abajo" href="registro.html">
+              <input class="buton" type="submit" value="Regístrate" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-compartir">
+          <a href="index.html" class="footer__container-compartir-logo">
+            <img src="./src/sass/assets/images/logo-footer.svg" alt="" />
+            <img src="./src/sass/assets/images/logo-footer2.svg" alt="" />
+          </a>
+          <div class="footer__container-compartir-rrss">
+            <a href=""
+              ><img src="./src/sass/assets/images/instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/twiter.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/linkedin.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__container-formaciones">
+          <p class="titulo">Formaciones</p>
+          <a href="m-fullstack.html">Máster de Desarrollo Web Full-Stack</a>
+          <a href="m-blockchain.html">Máster de Desarrollo Blockchain</a>
+          <a href="m-intelartifi.html">Máster de Inteligencia Artificial</a>
+          <a href="m-ciberseguridad.html">Máster en Ciberseguridad</a>
+        </div>
+        <div class="footer__container-legal">
+          <p class="titulo">Legal</p>
+          <a href="legal.html">Aviso legal</a>
+          <a href="legal.html">Términos y condiciones</a>
+          <a href="legal.html">Política de cookies</a>
+        </div>
+      </div>
+      <p class="copyr">Copyright &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

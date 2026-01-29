@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto HTML con estilos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <figure>
+          <a href="index.html">
+            <img
+              src="./src/sass/assets/images/conquerblocks-logo.svg"
+              alt="logo_conquer"
+            />
+          </a>
+        </figure>
+        <span class="header__container-hambur">☰</span>
+        <nav class="header__container-nav">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Quienes somos</a>
+
+          <div class="header__container-nav-masters">
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Formaciones</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="m-fullstack.html">Master Desarrollo Full Stack</a>
+                  </li>
+                  <li>
+                    <a href="m-blockchain.html">Master Desarrollo Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="m-intelartifi.html"
+                      >Master Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="m-ciberseguridad.html">Master Ciberseguridad</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <a href="blog.html">Blog</a>
+          <a href="registro.html">Registro</a>
+          <a href="login.html">Login</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero__container">
+        <h1>
+          TRANSFORMA TU
+          <span class="hero__container-txtespe">FUTURO PROFESIONAL</span> CON LA
+          ESCUELA LÍDER EN LA ENSEÑANZA DE NUEVAS PROFESIONES TECNOLÓGICAS
+        </h1>
+        <img src="./src/sass/assets/images/intro_home_900.png" alt="" />
+      </section>
+
+      <section class="container__formacion">
+        <h2 id="cursos">FORMACIONES CONQUER BLOCKS</h2>
+        <p class="container__formacion-subtitle">
+          La escuela <strong>número 1</strong> en desarrollo de tecnologías
+          emergentes. Conquer Blocks tiene un Máster pensado para ti.
+        </p>
+        <div class="container__formacion-art">
+          <article>
+            <a href="m-fullstack.html">
+              <h3>Máster en desarrollo Web Full-stack</h3>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/image-m1.png"
+                  alt="full-stack"
+                  width="200"
+                />
+              </figure>
+              <div class="container__formacion-art-text">
+                <p>
+                  <span class="destaca">El más vendido.</span> Consigue la
+                  profesión de tus sueños aprendiendo a programar desde 0.
+                </p>
+                <ul>
+                  <li>No require cononimientos previos</li>
+                  <li>
+                    Garantía de empleo. Si no consigues empleo, te devolvemos el
+                    dinero
+                  </li>
+                </ul>
+              </div>
+              <p class="simulabot">Ver más</p>
+            </a>
+          </article>
+
+          <article>
+            <a href="m-blockchain.html">
+              <h3>Máster en desarrollo Blockchain</h3>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/image-m2.png"
+                  alt="Blockchain"
+                  width="200"
+                />
+              </figure>
+              <div class="container__formacion-art-text">
+                <p>
+                  Ideal para programadores que quieran crecer profesionalmente
+                  aprendiendo una especialización
+                </p>
+                <ul>
+                  <li>Programa líder en el mercado</li>
+                  <li>Requiere de conocimientos previos</li>
+                </ul>
+              </div>
+              <p class="simulabot">Ver más</p>
+            </a>
+          </article>
+
+          <article>
+            <a href="m-intelartifi.html">
+              <h3>Máster en desarrollo de Inteligencia Artificial</h3>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/image-m3.png"
+                  alt="inteligencia aritficial"
+                  width="200"
+                />
+              </figure>
+              <div class="container__formacion-art-text">
+                <p>
+                  Aprende a desarrollar en la tecnología emergente que már
+                  rápido crece de la historia
+                </p>
+                <ul>
+                  <li>Modalidad para programadores especializándose</li>
+                  <li>Modalidad para personas sin conocimientos previos</li>
+                </ul>
+              </div>
+              <p class="simulabot">Ver más</p>
+            </a>
+          </article>
+
+          <article>
+            <a href="m-ciberseguridad.html">
+              <h3>Máster en Ciberseguridad</h3>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/image-m4.png"
+                  alt="Ciberseguridad"
+                  width="200"
+                />
+              </figure>
+              <div class="container__formacion-art-text">
+                <p>
+                  Descubre como asegurar la privacidad y protección de datos
+                </p>
+                <ul>
+                  <li>Máster diseñado por Chema Alonso</li>
+                  <li>
+                    Creado por los mejores Hackers y expertos en Ciberseguridad
+                    del mundo
+                  </li>
+                </ul>
+              </div>
+              <p class="simulabot">Ver más</p>
+            </a>
+          </article>
+        </div>
+      </section>
+      <section class="container__metodo">
+        <h2 id="cursos">METODOLOGÍA DE ESTUDIO</h2>
+        <p class="container__metodo-subtitle">
+          Cada Máster está vertebrado por medio de un método que tiene como
+          pilares la comunidad, el apoyo de los tutores con sesiones en directo
+          y un seguimiento con prácticas a lo largo de la formación.
+        </p>
+        <div class="container__metodo-art">
+          <article>
+            <figure class="container__metodo-art-ico">
+              <img
+                src="./src/sass/assets/images/ico_metodo/comunidad.svg"
+                alt="comunidad "
+              />
+            </figure>
+            <h3>Avanza en comunidad</h3>
+            <div class="container__metodo-art-text">
+              <p>
+                Formarás parte de la mayor comunidad de estudiantes de
+                desarrollo en habla hispana, donde podrás
+                <span class="destaca">apoyarte junto a tus compañeros</span> en
+                todo el proceso.
+              </p>
+              <p>
+                Comparte tus dudas y aprendizajes, encuentra compañeros de
+                estudio y trabaja en proyectos colaborativos.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <figure class="container__metodo-art-ico">
+              <img
+                src="./src/sass/assets/images/ico_metodo/tutores.svg"
+                alt="tutores"
+              />
+            </figure>
+            <h3>Tutores y sesiones en vivo</h3>
+            <div class="container__metodo-art-text">
+              <p>
+                Nuestro programa cuenta con tutores a los que hacer tus
+                preguntas cuando estés iniciando.
+              </p>
+              <p>
+                Los alumnos
+                <span class="destaca">pueden solicitar sesiones en vivo</span>
+                para resolver dudas. Nunca estás solo.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <figure class="container__metodo-art-ico">
+              <img
+                src="./src/sass/assets/images/ico_metodo/ejercicios.svg"
+                alt="practicas"
+              />
+            </figure>
+            <h3>Ejercicios prácticos</h3>
+            <div class="container__metodo-art-text">
+              <p>
+                Enfocado completamente a la práctica, para que aprendas de
+                verdad las habilidades que las empresas demandan hoy en día.
+              </p>
+              <p>
+                Construirás tu
+                <span class="destaca">portafolio de proyectos</span>, un paso
+                esencial para diferenciarte en el mercado laboral.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <figure class="container__metodo-art-ico">
+              <img src="./src/sass/assets/images/ico_metodo/ritmo.svg" alt="" />
+            </figure>
+            <h3>A tu ritmo, donde quieras</h3>
+            <div class="container__metodo-art-text">
+              <p>
+                Todo el programa educativo está grabado, y disponible de forma
+                online en nuestra plataforma, de manera que no importan tus
+                horarios, tu zona horaria, ni tu disponibilidad, vas a seguir el
+                programa a tu ritmo donde y cuando quieras.
+              </p>
+              <p>
+                Además, el acceso al Máster es
+                <span class="destaca">de por vida</span>, puedes acabarlo en
+                tanto tiempo como quieras.
+              </p>
+            </div>
+          </article>
+          <article>
+            <figure class="container__metodo-art-ico">
+              <img
+                src="./src/sass/assets/images/ico_metodo/maletin.svg"
+                alt=""
+              />
+            </figure>
+            <h3>Los alumnos recibirán con la inscripción al Máster:</h3>
+            <div class="container__metodo-art-text">
+              <ul>
+                <li>
+                  <span class="destaca"> 1000 Tempos gratuitos</span> en la
+                  plataforma de comunicación MyPublicInbox
+                </li>
+                <li>
+                  Tendrán la oportunidad de poder contratar a través de
+                  MyPublicInbox
+                  <span class="destaca">
+                    una sesión de orientación profesional con nuestros
+                    profesores</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="img-tema">
+            <h4>Aquí construyes tus ideas</h4>
+            <img src="./src/sass/assets/images/masters/metodo_img.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-compartir">
+          <a href="index.html" class="footer__container-compartir-logo">
+            <img src="./src/sass/assets/images/logo-footer.svg" alt="" />
+            <img src="./src/sass/assets/images/logo-footer2.svg" alt="" />
+          </a>
+          <div class="footer__container-compartir-rrss">
+            <a href=""
+              ><img src="./src/sass/assets/images/instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/twiter.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/linkedin.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__container-formaciones">
+          <p class="titulo">Formaciones</p>
+          <a href="m-fullstack.html">Máster de Desarrollo Web Full-Stack</a>
+          <a href="m-blockchain.html">Máster de Desarrollo Blockchain</a>
+          <a href="m-intelartifi.html">Máster de Inteligencia Artificial</a>
+          <a href="m-ciberseguridad.html">Máster en Ciberseguridad</a>
+        </div>
+        <div class="footer__container-legal">
+          <p class="titulo">Legal</p>
+          <a href="legal.html">Aviso legal</a>
+          <a href="legal.html">Términos y condiciones</a>
+          <a href="legal.html">Política de cookies</a>
+        </div>
+      </div>
+      <p class="copyr">Copyright &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

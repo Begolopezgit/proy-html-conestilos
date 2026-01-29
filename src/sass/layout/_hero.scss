@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as va;
+@use "../abstracts/mixins" as mx;
+.hero__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  & h1 {
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 1;
+    margin-right: -100%;
+    text-align: center;
+    width: 100%;
+    color: va.$white;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .hero__container-txtespe {
+      color: va.$blue-intenso;
+      font-style: italic;
+    }
+    @include mx.breakpoint(tablet) {
+      font-weight: 600;
+      font-size: 30px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    @include mx.breakpoint(tablethorizontal) {
+      font-size: 40px;
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+    @include mx.breakpoint(desktop) {
+      font-weight: 600;
+      font-size: 45px;
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+    @include mx.breakpoint(desktop) {
+      font-weight: 700;
+      font-size: 55px;
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+  & img {
+    width: 100%;
+    @include mx.breakpoint(tablet) {
+      width: 130%;
+    }
+  }
+}

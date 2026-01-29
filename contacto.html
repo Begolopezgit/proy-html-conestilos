@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto HTML con estilos-contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <figure>
+          <a href="index.html">
+            <img
+              src="./src/sass/assets/images/conquerblocks-logo.svg"
+              alt="logo_conquer"
+            />
+          </a>
+        </figure>
+        <span class="header__container-hambur">☰</span>
+        <nav class="header__container-nav">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Quienes somos</a>
+          <div class="header__container-nav-masters">
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Formaciones</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="m-fullstack.html">Master Desarrollo Full Stack</a>
+                  </li>
+                  <li>
+                    <a href="m-blockchain.html">Master Desarrollo Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="m-intelartifi.html"
+                      >Master Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="m-ciberseguridad.html">Master Ciberseguridad</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="blog.html">Blog</a>
+          <a href="registro.html">Registro</a>
+          <a href="login.html">Login</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contacto__container">
+        <section class="contacto__container-dat">
+          <h1>Contacta con <span class="subrayado">CÓNQUER Academy</span></h1>
+          <div class="contacto__container-dat-form">
+            <form action="" name="contacto" method="get">
+              <h2>Formulario de contacto</h2>
+              <p>
+                Indica tus datos y mensaje y nos ponemos en contacto contigo.
+              </p>
+              <p>
+                <label for="nom">Nombre *</label>
+                <input
+                  type="text"
+                  name="nom_usu"
+                  id="nom"
+                  maxlength="50"
+                  required
+                />
+              </p>
+              <p>
+                <label for="correo_usu">Tu email*</label>
+                <input type="email" name="email" id="correo_usu" required />
+              </p>
+              <p>
+                <label for="mensaje">Mensaje *</label> <br />
+                <textarea
+                  name="mensaj"
+                  id="mensaje"
+                  rows="7"
+                  cols="60"
+                  required
+                ></textarea>
+              </p>
+
+              <input class="buton" type="submit" value="Enviar" />
+            </form>
+          </div>
+        </section>
+        <section class="contacto__container-ubi">
+          <h2>Nuestra ubicación</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9946188625813!2d-3.668029524849233!3d40.43111805476486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b444496fbb%3A0xa2949bacf5ca8430!2sC.%20de%20Roma%2C%20Salamanca%2C%2028028%20Madrid!5e0!3m2!1ses!2ses!4v1758011940123!5m2!1ses!2ses"
+            width="400"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-compartir">
+          <a href="index.html" class="footer__container-compartir-logo">
+            <img src="./src/sass/assets/images/logo-footer.svg" alt="" />
+            <img src="./src/sass/assets/images/logo-footer2.svg" alt="" />
+          </a>
+          <div class="footer__container-compartir-rrss">
+            <a href=""
+              ><img src="./src/sass/assets/images/instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/twiter.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/linkedin.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__container-formaciones">
+          <p class="titulo">Formaciones</p>
+          <a href="m-fullstack.html">Máster de Desarrollo Web Full-Stack</a>
+          <a href="m-blockchain.html">Máster de Desarrollo Blockchain</a>
+          <a href="m-intelartifi.html">Máster de Inteligencia Artificial</a>
+          <a href="m-ciberseguridad.html">Máster en Ciberseguridad</a>
+        </div>
+        <div class="footer__container-legal">
+          <p class="titulo">Legal</p>
+          <a href="legal.html">Aviso legal</a>
+          <a href="legal.html">Términos y condiciones</a>
+          <a href="legal.html">Política de cookies</a>
+        </div>
+      </div>
+      <p class="copyr">Copyright &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

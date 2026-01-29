@@ -1,0 +1,79 @@
+@use "../abstracts/variables" as va;
+@use "../abstracts/mixins" as mx;
+
+.contacto__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: -33px;
+  color: va.$white;
+  justify-items: center;
+  background-color: va.$dark-grey;
+  h1 {
+    color: va.$white;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+  }
+  .subrayado {
+    text-decoration: none;
+    background-image: va.$gradian-cq;
+    background-repeat: no-repeat;
+    background-size: 100% 6px;
+    background-position: 0 100%;
+    padding-bottom: 3px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: va.$white;
+  }
+  &-dat-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    input {
+      border: none;
+      background-color: va.$dark-grey;
+      border-bottom: 1px solid va.$green-light;
+      padding-bottom: 5px;
+      color: va.$white;
+    }
+    textarea {
+      background-color: va.$dark-grey;
+      border: 1px solid va.$green-light;
+      max-width: 350px;
+      color: va.$white;
+    }
+    .buton {
+      @include mx.buton();
+    }
+  }
+  &-ubi {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: va.$green-light;
+
+    text-align: center;
+    height: auto;
+    width: 100%;
+    iframe {
+      margin-top: 10px;
+      margin-bottom: -25px;
+      max-width: 350px auto;
+      width: 95%;
+      @include mx.breakpoint(tablet) {
+        max-width: none;
+        width: 100%;
+
+        min-height: 300px;
+      }
+    }
+  }
+}

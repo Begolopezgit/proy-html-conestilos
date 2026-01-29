@@ -1,0 +1,23 @@
+//Definiciónes, utilización de alias
+@use "../sass/abstracts/_variables/" as va;
+@use "../sass/abstracts/_mixins" as mx;
+@use "../sass/abstracts/_functions" as fn;
+
+//los ficheros utilizados de generales
+@use "../sass/themes/default";
+@use "../sass/layout/header";
+@use "../sass/layout/hero";
+@use "../sass/layout/mainhom";
+@use "../sass/layout/footer";
+@use "../sass/layout/metodologia";
+
+//páginas adicionales
+@use "../sass/pages/blog";
+@use "../sass/pages/contacto";
+@use "../sass/pages/registro";
+@use "../sass/pages/login";
+@use "../sass/pages/about";
+@use "../sass/pages/master-fullstack";
+@use "../sass/pages/master-blockchain";
+@use "../sass/pages/master-intelartifi";
+@use "../sass/pages/master-ciberseguridad";

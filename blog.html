@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto HTML con estilos-blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <figure>
+          <a href="index.html">
+            <img
+              src="./src/sass/assets/images/conquerblocks-logo.svg"
+              alt="logo_conquer"
+            />
+          </a>
+        </figure>
+        <span class="header__container-hambur">☰</span>
+        <nav class="header__container-nav">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Quienes somos</a>
+          <div class="header__container-nav-masters">
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Formaciones</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="m-fullstack.html">Master Desarrollo Full Stack</a>
+                  </li>
+                  <li>
+                    <a href="m-blockchain.html">Master Desarrollo Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="m-intelartifi.html"
+                      >Master Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="m-ciberseguridad.html">Master Ciberseguridad</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="blog.html">Blog</a>
+          <a href="registro.html">Registro</a>
+          <a href="login.html">Login</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="mainblog__container">
+        <h1>Blog de la academia Conquer</h1>
+
+        <div class="mainblog__container-art">
+          <article>
+            <h2>¿Qué es el diagrama de flujo y por qué es tan útil?</h2>
+            <figure>
+              <a href="./post/post_diagrama_flujos.html">
+                <img
+                  src="./src/sass/assets/images/post/post_diagrama_flujo.png"
+                  alt="diagrama de flujos"
+                />
+              </a>
+            </figure>
+
+            <p class="mainblog__container-art-text">
+              Un *diagrama de flujo* es una representación visual de un proceso
+              mediante símbolos y flechas que indican el flujo y el orden de
+              ejecución. En pocas
+            </p>
+          </article>
+          <article>
+            <h2>¿Qué es un algoritmo y por qué es tan importante?</h2>
+            <figure>
+              <a
+                href="./post/post_post_algoritmos_que_son_y_como_funcionan.html"
+              >
+                <img
+                  src="./src/sass/assets/images/post/post_algoritmos_que_son_y_como_funcionan.png"
+                  alt="algoritmos"
+                />
+              </a>
+            </figure>
+
+            <p class="mainblog__container-art-text">
+              Un *algoritmo* es un conjunto de instrucciones ordenadas y
+              definidas para resolver un problema o realizar una tarea. Es como
+              una receta de cocina: tienes
+            </p>
+          </article>
+          <article>
+            <h2>
+              Lenguaje natural y programación:¿cómo lo entienden las máquinas?
+            </h2>
+            <figure>
+              <a href="./post/post_post_lenguaje_natural.html">
+                <img
+                  src="./src/sass/assets/images/post/post_lenguaje_natural.png"
+                  alt="lenguaje natural"
+                />
+              </a>
+            </figure>
+
+            <p class="mainblog__container-art-text">
+              El lenguaje natural es el conjunto de idiomas que utilizamos los
+              humanos para comunicarnos. A diferencia de los lenguajes de
+              programación, que son
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-compartir">
+          <a href="index.html" class="footer__container-compartir-logo">
+            <img src="./src/sass/assets/images/logo-footer.svg" alt="" />
+            <img src="./src/sass/assets/images/logo-footer2.svg" alt="" />
+          </a>
+          <div class="footer__container-compartir-rrss">
+            <a href=""
+              ><img src="./src/sass/assets/images/instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/twiter.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/linkedin.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__container-formaciones">
+          <p class="titulo">Formaciones</p>
+          <a href="m-fullstack.html">Máster de Desarrollo Web Full-Stack</a>
+          <a href="m-blockchain.html">Máster de Desarrollo Blockchain</a>
+          <a href="m-intelartifi.html">Máster de Inteligencia Artificial</a>
+          <a href="m-ciberseguridad.html">Máster en Ciberseguridad</a>
+        </div>
+        <div class="footer__container-legal">
+          <p class="titulo">Legal</p>
+          <a href="legal.html">Aviso legal</a>
+          <a href="legal.html">Términos y condiciones</a>
+          <a href="legal.html">Política de cookies</a>
+        </div>
+      </div>
+      <p class="copyr">Copyright &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto HTML con estilos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <figure>
+          <a href="index.html">
+            <img
+              src="./src/sass/assets/images/conquerblocks-logo.svg"
+              alt="logo_conquer"
+            />
+          </a>
+        </figure>
+        <span class="header__container-hambur">☰</span>
+        <nav class="header__container-nav">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Quienes somos</a>
+
+          <div class="header__container-nav-masters">
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Formaciones</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="m-fullstack.html">Master Desarrollo Full Stack</a>
+                  </li>
+                  <li>
+                    <a href="m-blockchain.html">Master Desarrollo Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="m-intelartifi.html"
+                      >Master Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="m-ciberseguridad.html">Master Ciberseguridad</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="blog.html">Blog</a>
+          <a href="registto.html">Registro</a>
+          <a href="login.html">Login</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="masterfs__container">
+        <div class="masterfs__container-hero">
+          <div class="masterfs__container-hero-text">
+            <h1>MASTER EN DESARROLLO WEB FULL STACK DE CONQUER BLOCKS</h1>
+            <p class="titulo">
+              El Máster en Desarrollo Full Stack que te garantiza un empleo por
+              contrato...
+            </p>
+            <p class="descrip">
+              La formación donde aprenderás todo lo que necesitas para
+              convertirte en Desarrollador Full-Stack,
+              <span class="destaca">aunque partas desde cero</span> en el mundo
+              de la programación.
+            </p>
+            <a href="registro.html">
+              <input class="buton" type="submit" value="Regístrate" />
+            </a>
+          </div>
+          <div class="masterfs__container-hero-img">
+            <img
+              src="./src/sass/assets/images/masters/fullstack/1-Full-Stack-Conquer-Blocks.avif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="masterfs__container-formadores">
+          <div class="masterfs__container-formadores-text">
+            <h2>Profesorado del Máster Full Stack</h2>
+            <p class="descrip">
+              Fórmate con profesionales de la élite del desarrollo con amplia
+              experiencia en el mercado laboral
+            </p>
+          </div>
+          <div class="masterfs__container-formadores-art">
+            <article>
+              <figure>
+                <h3>Bienvenido Saez</h3>
+                <img
+                  src="./src/sass/assets/images/quienes_somos/bienvenido.avif"
+                  alt="Bienvenido Saez"
+                  width="150"
+                />
+              </figure>
+              <p class="titul-p">Director académico</p>
+              <p class="masterfs__container-art-text">
+                Bienvenido cuenta con más de 15 años de experiencia en el mundo
+                de la educación, especialmente enseñando HTML, CSS, Javascript y
+                Django.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <h3>Elena Hernández</h3>
+
+                <img
+                  src="./src/sass/assets/images/quienes_somos/elena.avif"
+                  alt="Elena Hernández"
+                  width="150"
+                />
+              </figure>
+              <p class="titul-p">Dra.Astrofísica Computacional</p>
+              <p class="masterfs__container-art-text">
+                Profesora de Python en el Máster, se ha dedicado a enseñar
+                programación en la Universidad a personas que, como tú, partían
+                de 0, y será la que te enseñe tu primer lenguaje de
+                programación.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <h3>Carlos Azaustre</h3>
+
+                <img
+                  src="./src/sass/assets/images/quienes_somos/carlos_azaustre.avif"
+                  alt="Carlos Azaustre"
+                  width="150"
+                />
+              </figure>
+              <p class="titul-p">Ingeniero telemático</p>
+              <p class="masterfs__container-art-text">
+                Está reconocido por Google desde 2019 como Developer Expert GDE
+                en Tecnologías web y premiado en 2022 y 2023 como Microsoft MVP
+                (Most Valuable Professional).
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="masterfs__container-sistema">
+          <div class="masterfs__container-sistema-text">
+            <h2>Sistema de enseñanza en 3 pasos</h2>
+            <p class="descrip">
+              Con el que consigues un empleo, o te devolvemos tu dinero.
+            </p>
+          </div>
+          <div class="masterfs__container-sistema-art">
+            <article>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/fullstack/1-sistema-Full-Stack-Conquer-Blocks.avif"
+                  alt="B"
+                />
+                <h3>
+                  Pseudocódigo para empezar desde 0 en el mundo de la
+                  programación
+                </h3>
+              </figure>
+              <p class="masterfs__container-sistema-art-descrip">
+                El pseudocódigo es como dar instrucciones en un idioma simple
+                para decirle a una computadora qué hacer antes de escribir un
+                programa real.
+              </p>
+              <p class="masterfs__container-sistema-art-descrip">
+                Es un paso previo antes de la programación.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/fullstack/2-sistema-Full-Stack-Conquer-Blocks.avif"
+                  alt="B"
+                />
+                <h3>
+                  Desarrollo Full Stack para conseguir tu primer empleo de alto
+                  valor
+                </h3>
+              </figure>
+              <p class="masterfs__container-sistema-art-descrip">
+                Aprendes todas las tecnologías que necesitas para convertirte en
+                Desarrollador Full-Stack, con el programa más completo del
+                mercado.
+              </p>
+              <p class="masterfs__container-sistema-art-descrip">
+                un <span class="destaca"> programador de élite</span> en el
+                mercado laboral.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./src/sass/assets/images/masters/fullstack/3-sistema-Full-Stack-Conquer-Blocks.avif"
+                  alt="B"
+                />
+                <h3>
+                  Aprende a venderte para desbloquear las mejores oportunidades
+                  laborales del mercado
+                </h3>
+              </figure>
+              <p class="masterfs__container-sistema-art-descrip">
+                Te enseñamos cuál es la forma correcta de preparar tu carta de
+                presentación, tu contacto con las empresas, y cómo pasar de la
+                forma adecuada los procesos de selección, para que puedas
+                lanzarte al mercado laboral y
+                <span class="destaca"> conseguir tu puesto de empleo</span> .
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="masterfs__container-temario">
+          <div class="masterfs__container-temario-text">
+            <h3>Temario Master Full Stack</h3>
+            <p class="descrip">
+              El más completo del mercado. Adaptado a la vida laboral. Contacta
+              si quieres tener el temario completo
+            </p>
+          </div>
+          <div class="masterfs__container-temario-bloques">
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 1:</span>
+                  <p>Introducción a la Informática</p>
+                  <p>Pseudocódigo</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Introducción a la Informática</li>
+                  <li>Introducción a PSEint</li>
+                  <li>Tu primer algoritmo</li>
+                  <li>Funciones</li>
+                  <li>Arrays y funciones propias</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 2:</span>
+                  <p>Introducción a Linux</p>
+                  <p>La terminal</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Virtualbox</li>
+                  <li>Windows Subsystem Linux (WSL)</li>
+                  <li>Primeros comandos y tipos de archivos</li>
+                  <li>Gestión de usuarios y grupos</li>
+                  <li>Utilidades avanzadas</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 3:</span>
+                  <p>Python básico</p>
+                  <p>Python avanzado</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Configuración y Entorno de Desarrollo</li>
+                  <li>Gestión de entornos virtuales</li>
+                  <li>Python inicial</li>
+                  <li>Estructuras de datos</li>
+                  <li>Funciones</li>
+                  <li>Gestión de archivos</li>
+                  <li>Programación orientada a objetos</li>
+                  <li>Ejercicios avanzados con explicación</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 4:</span>
+                  <p>SOLID y acceso a Base de Datos</p>
+                  <p>Git y Github</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Principios SOLID en Python</li>
+                  <li>¿Qué es un ORM?</li>
+                  <li>Introducción a Git y Control de Versiones</li>
+                  <li>Uso Básico de Git</li>
+                  <li>Trabajo Colaborativo Local</li>
+                  <li>Introducción a GitHub</li>
+                  <li>Trabajo Colaborativo en GitHub</li>
+                  <li>Flujo de Trabajo Avanzado</li>
+                  <li>Buenas Prácticas y Consejos</li>
+                  <li>Integración Continua y Despliegue</li>
+                  <li>Casos de Uso Específicos</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 5:</span>
+                  <p>Front-end</p>
+                </div>
+              </summary>
+
+              <div class="contenido">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript y TypeScript</li>
+                  <li>ReactJS Inicial y Avanzado</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 6:</span>
+                  <p>Back-end</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>
+                    <strong>Bases de datos</strong>
+                    <ul>
+                      <li>El Modelo Relacional</li>
+                      <li>Introducción al lenguaje de consulta</li>
+                      <li>Cláusulas de ordenación de datos</li>
+                      <li>Agrupaciones y funciones de grupo</li>
+                      <li>Creación de Tablas y Constraints</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Streamlit</strong>
+                    <ul>
+                      <li>Streamlit avanzado</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Django</strong>
+                    <ul>
+                      <li>Entorno de Desarrollo</li>
+                      <li>Modelo MVT</li>
+                      <li>Queries</li>
+                      <li>Formularios</li>
+                      <li>Templates</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>WordPress</strong>
+                    <ul>
+                      <li>Programando con PHP</li>
+                      <li>SEO en WordPress</li>
+                      <li>Plugins y Temas</li>
+                      <li>Elementos</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 7:</span>
+                  <p>Las entrevistas de trabajo y metodologías Ágiles/ Scrum</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Tipos de procesos de selección</li>
+                  <li>Investigación de la empresa objetivo</li>
+                  <li>La importancia del currículum</li>
+                  <li>Búsqueda de empleo en redes sociales</li>
+                  <li>Comunicación no verbal (CNV)</li>
+                  <li>La entrevista</li>
+                  <li>Preguntas fáciles</li>
+                  <li>Preguntas prohibidas</li>
+                </ul>
+              </div>
+            </details>
+
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 8:</span>
+                  <p>Back-end avanzado</p>
+                </div>
+              </summary>
+
+              <div class="contenido">
+                <ul>
+                  <li>Node.js (Javascript)</li>
+                  <li>Java y Spring</li>
+                  <li>Rust</li>
+                </ul>
+              </div>
+            </details>
+            <details name="temario">
+              <summary>
+                <div class="textos">
+                  <span>Bloque 9:</span>
+                  <p>Front-end avanzado</p>
+                </div>
+              </summary>
+              <div class="contenido">
+                <ul>
+                  <li>Angular</li>
+                  <li>VueJS</li>
+                  <li>Astro</li>
+                </ul>
+              </div>
+            </details>
+            <a class="bot-abajo" href="registro.html">
+              <input class="buton" type="submit" value="Regístrate" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-compartir">
+          <a href="index.html" class="footer__container-compartir-logo">
+            <img src="./src/sass/assets/images/logo-footer.svg" alt="" />
+            <img src="./src/sass/assets/images/logo-footer2.svg" alt="" />
+          </a>
+          <div class="footer__container-compartir-rrss">
+            <a href=""
+              ><img src="./src/sass/assets/images/instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/twiter.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/linkedin.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__container-formaciones">
+          <p class="titulo">Formaciones</p>
+          <a href="m-fullstack.html">Máster de Desarrollo Web Full-Stack</a>
+          <a href="m-blockchain.html">Máster de Desarrollo Blockchain</a>
+          <a href="m-intelartifi.html">Máster de Inteligencia Artificial</a>
+          <a href="m-ciberseguridad.html">Máster en Ciberseguridad</a>
+        </div>
+        <div class="footer__container-legal">
+          <p class="titulo">Legal</p>
+          <a href="legal.html">Aviso legal</a>
+          <a href="legal.html">Términos y condiciones</a>
+          <a href="legal.html">Política de cookies</a>
+        </div>
+      </div>
+      <p class="copyr">Copyright &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

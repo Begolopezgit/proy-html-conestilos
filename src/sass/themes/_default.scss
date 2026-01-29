@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as va;
+
+html * {
+  padding: 0;
+  margin: 0;
+  font-family: va.$font-total;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+}

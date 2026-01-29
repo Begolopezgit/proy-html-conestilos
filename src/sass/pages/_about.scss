@@ -1,0 +1,120 @@
+@use "../abstracts/variables" as va;
+@use "../abstracts/mixins" as mx;
+.about__container {
+  margin-bottom: 20px;
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+
+    text-align: center;
+    width: 100%;
+    color: va.$dark-grey;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &-descrip {
+    margin: 30px;
+    @include mx.breakpoint(desktop) {
+      margin-left: 160px;
+      margin-right: 160px;
+    }
+    @include mx.breakpoint(desktopxl) {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+  }
+  &-art {
+    margin-left: 10px;
+    margin-right: 10px;
+    & article {
+      border: 1px solid va.$green-light;
+      box-shadow: 0 5px 10px va.$green-light;
+      margin-bottom: 30px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 15px 30px;
+        text-align: center;
+
+        @include mx.breakpoint(tablethorizontal) {
+          height: 90px;
+        }
+        @include mx.breakpoint(desktop) {
+          font-size: 30px;
+          font-weight: 500;
+          padding: 18px 40px;
+        }
+        @include mx.breakpoint(desktopxl) {
+          font-size: 35px;
+          padding: 35px 30px;
+          font-weight: 600;
+        }
+      }
+      & figure {
+        text-align: center;
+      }
+      .titul-p {
+        text-transform: uppercase;
+        color: va.$blue-intenso;
+        text-align: center;
+        font-weight: 600;
+      }
+      .about__container-art-text {
+        margin-left: 15px;
+        margin-right: 18px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        height: auto;
+        color: va.$dark-grey;
+        font-weight: 300;
+        & .destaca {
+          font-weight: bold;
+        }
+        @include mx.breakpoint(tablethorizontal) {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        @include mx.breakpoint(desktop) {
+          font-size: 16px;
+          margin-left: 45px;
+          margin-right: 45px;
+        }
+        @include mx.breakpoint(desktopxl) {
+          font-size: 15px;
+          margin-left: 60px;
+          margin-right: 60px;
+        }
+      }
+    }
+    @include mx.breakpoint(tablet) {
+      margin-left: 80px;
+      margin-right: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      & > :last-child:nth-child(odd) {
+        grid-column: 1 / -1; // Ocupa toda la fila
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+    }
+    @include mx.breakpoint(desktop) {
+      margin-left: 160px;
+      margin-right: 160px;
+      gap: 40px;
+    }
+    @include mx.breakpoint(desktopxl) {
+      margin-left: 200px;
+      margin-right: 200px;
+      gap: 80px;
+    }
+  }
+}

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto HTML con estilos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <figure>
+          <a href="index.html">
+            <img
+              src="./src/sass/assets/images/conquerblocks-logo.svg"
+              alt="logo_conquer"
+            />
+          </a>
+        </figure>
+        <span class="header__container-hambur">☰</span>
+        <nav class="header__container-nav">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Quienes somos</a>
+          <div class="header__container-nav-masters">
+            <ul>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Formaciones</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="m-fullstack.html">Master Desarrollo Full Stack</a>
+                  </li>
+                  <li>
+                    <a href="m-blockchain.html">Master Desarrollo Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="m-intelartifi.html"
+                      >Master Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="m-ciberseguridad.html">Master Ciberseguridad</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="blog.html">Blog</a>
+          <a href="registro.html">Registro</a>
+          <a href="login.html">Login</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="registro__container">
+        <section class="registro__container-dat">
+          <h1>Registrate en <span class="subrayado">Conquer Academy</span></h1>
+          <div class="registro__container-dat-form">
+            <form
+              action=""
+              name="registro"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <h2>Formulario de registro</h2>
+              <div class="fields">
+                <fieldset>
+                  <legend>Datos de registro</legend>
+                  <p class="dato">
+                    <label for="nom_usu">Nombre completo*</label>
+                    <input
+                      type="text"
+                      name="nom_usu"
+                      id="nom_usu"
+                      maxlength="80"
+                      required
+                    />
+                  </p>
+                  <p class="dato">
+                    <label for="fech_nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fech_nacimiento" />
+                  </p>
+                  <p class="dato">
+                    <label for="correo_usu">Email*</label>
+                    <input type="email" name="email" id="correo_usu" required />
+                  </p>
+                  <p class="dato">
+                    <label for="pass1">Contraseña*</label>
+                    <input
+                      type="password"
+                      name="contraseña"
+                      id="pass1"
+                      required
+                    />
+                  </p>
+                  <p class="dato">
+                    <label for="pass2">Repite contraseña</label>
+                    <input
+                      type="password"
+                      name="contraseña2"
+                      id="pass2"
+                      required
+                    />
+                  </p>
+                </fieldset>
+                <fieldset>
+                  <legend>Dirección postal</legend>
+                  <p class="dato">
+                    <label for="calle_usu">Calle / Avenida</label>
+                    <input type="text" name="calle" id="calle_usu" />
+                  </p>
+
+                  <p class="dato">
+                    <label for="num_calle">Número / piso</label>
+                    <input type="number" name="calle_num" id="num_calle" />
+                  </p>
+
+                  <p class="dato">
+                    <label for="cod_calle">Código postal</label>
+                    <input type="number" name="calle_cod" id="cod_calle" />
+                  </p>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Datos profesionales</legend>
+                  <p class="dato">
+                    <label for="web_usu">Página web</label>
+                    <input type="url" name="web" id="web_usu" />
+                  </p>
+                  <p class="dato">
+                    <label for="foto">Foto</label>
+                    <input type="file" name="foto_usu" id="foto" />
+                  </p>
+                  <p class="dato">
+                    <label for="bio">Biografía*</label> <br />
+                    <textarea
+                      name="biogra"
+                      id="bio"
+                      rows="4"
+                      cols="60"
+                      required
+                    >
+Introduce tu experiencia y aprendizajes</textarea
+                    >
+                  </p>
+                </fieldset>
+              </div>
+
+              <input class="buton" type="submit" value="Enviar" />
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-compartir">
+          <a href="index.html" class="footer__container-compartir-logo">
+            <img src="./src/sass/assets/images/logo-footer.svg" alt="" />
+            <img src="./src/sass/assets/images/logo-footer2.svg" alt="" />
+          </a>
+          <div class="footer__container-compartir-rrss">
+            <a href=""
+              ><img src="./src/sass/assets/images/instagram.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="./src/sass/assets/images/twiter.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/linkedin.svg" alt="" />
+            </a>
+            <a href=""
+              ><img src="./src/sass/assets/images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__container-formaciones">
+          <p class="titulo">Formaciones</p>
+          <a href="m-fullstack.html">Máster de Desarrollo Web Full-Stack</a>
+          <a href="m-blockchain.html">Máster de Desarrollo Blockchain</a>
+          <a href="m-intelartifi.html">Máster de Inteligencia Artificial</a>
+          <a href="m-ciberseguridad.html">Máster en Ciberseguridad</a>
+        </div>
+        <div class="footer__container-legal">
+          <p class="titulo">Legal</p>
+          <a href="legal.html">Aviso legal</a>
+          <a href="legal.html">Términos y condiciones</a>
+          <a href="legal.html">Política de cookies</a>
+        </div>
+      </div>
+      <p class="copyr">Copyright &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

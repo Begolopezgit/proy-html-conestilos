@@ -1,0 +1,192 @@
+@use "../abstracts/variables" as va;
+@use "../abstracts/mixins" as mx;
+.container__metodo {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  & h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+    @include mx.breakpoint(desktop) {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  &-subtitle {
+    margin-bottom: 30px;
+    @include mx.breakpoint(tablet) {
+      padding: 10px 40px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    @include mx.breakpoint(desktop) {
+      padding: 20px 81px;
+      font-size: 23px;
+      font-weight: 500;
+    }
+    @include mx.breakpoint(desktopxl) {
+      padding: 20px 290px;
+      font-size: 23px;
+      font-weight: 500;
+    }
+  }
+  &-art {
+    & article {
+      border: 1px solid va.$blue;
+      box-shadow: 0 5px 10px va.$blue;
+      margin-bottom: 30px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      .container__metodo-art-ico {
+        text-align: center;
+        padding: 10px;
+        img {
+          width: 20%;
+          padding: 25px;
+          overflow: visible;
+
+          box-shadow: 0 5px 5px va.$blue;
+          border-radius: 50%;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: va.$dark-grey;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 15px 30px;
+        text-align: center;
+
+        @include mx.breakpoint(tablethorizontal) {
+        }
+        @include mx.breakpoint(desktop) {
+          font-size: 20px;
+          font-weight: 500;
+          padding: 15px 20px;
+        }
+        @include mx.breakpoint(desktopxl) {
+          font-size: 22px;
+          padding: 15px 20px;
+          font-weight: 700;
+        }
+      }
+      & img {
+        width: 50%;
+      }
+
+      & .container__metodo-art-text {
+        margin-left: 15px;
+        margin-right: 18px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        height: auto;
+        color: va.$dark-grey;
+        font-weight: 300;
+        & .destaca {
+          font-weight: bold;
+        }
+
+        & ul {
+          list-style: none;
+          & li {
+            margin-left: 40px;
+            margin-top: 10px;
+
+            &::before {
+              content: "✔";
+              color: va.$blue;
+              font-weight: 500;
+              font-size: 20px;
+              margin-right: 5px;
+            }
+            @include mx.breakpoint(desktop) {
+              margin-left: 20px;
+            }
+          }
+        }
+        @include mx.breakpoint(desktop) {
+          font-size: 16px;
+        }
+        @include mx.breakpoint(desktopxl) {
+          font-size: 15px;
+        }
+      }
+      .simulabot {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        background-color: va.$dark-grey;
+        color: va.$white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: auto;
+        @include mx.breakpoint(desktop) {
+          font-size: 20px;
+        }
+      }
+    }
+    .img-tema {
+      width: 90%;
+      display: flex;
+
+      font-size: 20px;
+      font-weight: 200;
+      justify-content: space-between;
+      gap: 10px;
+      text-transform: uppercase;
+      color: va.$dark-grey;
+      img {
+        width: 60%;
+        border-radius: 0 0 20px 20px;
+        @include mx.breakpoint(tablethorizontal) {
+          width: 100%;
+        }
+        @include mx.breakpoint(desktopxl) {
+          width: 80%;
+        }
+      }
+      @include mx.breakpoint(tablethorizontal) {
+        display: block;
+        margin-top: 60%;
+        h4 {
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+      }
+    }
+    @include mx.breakpoint(tablethorizontal) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    @include mx.breakpoint(desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+  }
+  @include mx.breakpoint(tablet) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  @include mx.breakpoint(desktop) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @include mx.breakpoint(desktopxl) {
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}

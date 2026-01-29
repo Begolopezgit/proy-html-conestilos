@@ -1,0 +1,65 @@
+@use "../abstracts/variables" as va;
+@use "../abstracts/mixins" as mx;
+
+.login__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: va.$white;
+  justify-items: center;
+  background-color: va.$dark-grey;
+  h1 {
+    color: va.$white;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .subrayado {
+    text-decoration: none;
+    background-image: va.$gradian-cq;
+    background-repeat: no-repeat;
+    background-size: 100% 6px;
+    background-position: 0 100%;
+    padding-bottom: 3px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: va.$white;
+  }
+  .dato {
+    border-bottom: 1px solid va.$white;
+  }
+  &-dat-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    fieldset {
+      padding: 30px;
+      border: none;
+      border-top: 3px solid va.$green-light;
+      & legend {
+        text-transform: uppercase;
+      }
+    }
+    input {
+      border: none;
+      background-color: va.$dark-grey;
+      padding-bottom: 5px;
+      color: va.$white;
+    }
+
+    .buton {
+      @include mx.buton();
+      margin-left: 20px;
+    }
+  }
+}
